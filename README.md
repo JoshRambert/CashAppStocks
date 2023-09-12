@@ -10,4 +10,6 @@ The third party libraries I used was the HTTPLibrary that I built here [https://
 Would love to go over the process of building it in the future.
 
 This was my first time creating a project using REDUX and SwiftUI. Wanted to challenge myself with this project
+I love learning new technologies and buidling apps so I probably spent more time on this than I should've haha. I will say about 7-8 hours. Mainly spent
+working my away around the REDUX architecture. 
 
