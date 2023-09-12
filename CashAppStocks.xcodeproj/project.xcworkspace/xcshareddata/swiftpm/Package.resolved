@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "httplibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JoshRambert/HTTPLibrary",
+      "state" : {
+        "revision" : "e6b7f6be71f3731a502c6dbebc0d404b52f23df1",
+        "version" : "0.1.2"
+      }
+    }
+  ],
+  "version" : 2
+}
