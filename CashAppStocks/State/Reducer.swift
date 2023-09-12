@@ -11,6 +11,9 @@ let cashAppStocksReducer: Reducer<CashAppStocksState, CashAppStocksAction> = { s
     var mutatingState = state
 
     switch action {
+    case .launch:
+        mutatingState.stocksState = .fetching
+    
     case .setupRetrieved(let stocks):
         mutatingState.stocksState = !stocks.array.isEmpty ? .retrieved(stocks.array) : .empty
         
