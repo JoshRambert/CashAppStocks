@@ -18,7 +18,21 @@ struct Stock: Decodable, Identifiable, Hashable {
     var priceTimestamp: Int
     
     var priceUsd: String {
-        "price: $\(Double(priceCents / 100))"
+        let value = (Double(priceCents) * 0.01)
+        guard let currency = currencyFormatter.string(from: NSNumber(value: value)) else {
+            return "No price"
+        }
+
+        return "price \(currency)"
+    }
+    
+    private var currencyFormatter: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.usesGroupingSeparator = true
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        
+        return formatter
     }
     
     var shares: String {
